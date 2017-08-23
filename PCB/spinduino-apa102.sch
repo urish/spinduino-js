@@ -1742,13 +1742,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$3" library="uri" deviceset="TLE4946-2K" device="SMD"/>
 <part name="GND9" library="ng-beacon" deviceset="GND" device=""/>
 <part name="R10" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
-<part name="R11" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND10" library="ng-beacon" deviceset="GND" device=""/>
-<part name="R12" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="R13" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
@@ -1798,13 +1796,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$3" gate="G$1" x="180.34" y="0" rot="R180"/>
 <instance part="GND9" gate="1" x="167.64" y="12.7" rot="R180"/>
 <instance part="R10" gate="G$1" x="162.56" y="-5.08" rot="R90"/>
-<instance part="R11" gate="G$1" x="162.56" y="5.08" rot="R90"/>
 <instance part="SUPPLY2" gate="G$1" x="-10.16" y="55.88" rot="R90"/>
 <instance part="SUPPLY3" gate="G$1" x="-10.16" y="73.66" rot="R90"/>
 <instance part="SUPPLY5" gate="G$1" x="-10.16" y="91.44" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="68.58" y="22.86" rot="R180"/>
 <instance part="GND10" gate="1" x="167.64" y="48.26" rot="R180"/>
-<instance part="R12" gate="G$1" x="162.56" y="40.64" rot="R90"/>
 <instance part="R13" gate="G$1" x="162.56" y="30.48" rot="R90"/>
 <instance part="C1" gate="G$1" x="33.02" y="111.76" rot="R90"/>
 <instance part="C2" gate="G$1" x="33.02" y="119.38" rot="R90"/>
@@ -1874,20 +1870,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="66.04" y1="27.94" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="10.16" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="167.64" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="10.16" x2="172.72" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<junction x="167.64" y="10.16"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="45.72" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<junction x="167.64" y="45.72"/>
 <wire x1="172.72" y1="45.72" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
@@ -1958,7 +1948,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$2" gate="G$1" pin="Q"/>
 <wire x1="172.72" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
 <label x="160.02" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="35.56" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
 <junction x="162.56" y="35.56"/>
 <pinref part="R13" gate="G$1" pin="2"/>
@@ -1977,7 +1966,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="0" x2="160.02" y2="0" width="0.1524" layer="91"/>
 <junction x="162.56" y="0"/>
-<pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
