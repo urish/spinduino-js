@@ -161,7 +161,7 @@
 <wire x1="20.439003125" y1="17.5123125" x2="23.61320625" y2="5.666021875" width="0" layer="20" curve="90"/>
 <wire x1="23.61320625" y1="5.666021875" x2="32.090303125" y2="0.77176875" width="0" layer="20"/>
 <wire x1="32.090303125" y1="0.77176875" x2="46.77425625" y2="4.706321875" width="0" layer="20" curve="90"/>
-<text x="48.26" y="71.12" size="1.778" layer="25" rot="R120" align="bottom-center">Spinduino APA r1</text>
+<text x="48.26" y="71.12" size="1.778" layer="25" rot="R120" align="bottom-center">Spinduino APA r2</text>
 <text x="43.7" y="68.72" size="1.778" layer="25" rot="R120" align="bottom-center">(c) 2017, Uri Shaked</text>
 </plain>
 <libraries>
