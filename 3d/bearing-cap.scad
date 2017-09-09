@@ -2,6 +2,7 @@
 // Copyright (C) 2017, Uri Shaked
 
 $capHeight = 3;
+$spacerHeight = 0.6;
 $capRadius = 11;
 $roundness = 0.5;
 $magnetRadius = 1.25;
@@ -21,7 +22,7 @@ module rounded_cylinder(r,h,edge=0.2) {
 }
 
 
-translate([0,0,$capHeight+0.6])
+translate([0,0,$capHeight+$spacerHeight])
 difference() {
     union() {
         translate([0,0,2.4])
@@ -36,8 +37,9 @@ difference() {
     translate([-5,-0.4,0])
     cube([10,0.8,3]);
 }
+
 translate([0,0,$capHeight])
-cylinder(r=6,h=0.6);
+cylinder(r=6,h=$spacerHeight);
 
 difference() {
     rotate_extrude() {
@@ -45,8 +47,8 @@ difference() {
         square([4.2, $capHeight/2]);
 
         hull() {
-            translate([4.2, $capHeight/2])
-            square([1, $capHeight/2]);
+            translate([0, 0])
+            square([1, $capHeight]);
             
             translate([$capRadius, $roundness])
             scale([2,1])
@@ -63,5 +65,4 @@ difference() {
     
     translate([$capRadius-$magnetRadius-0.25, 0,1])
     cylinder(r=$magnetRadius,h=$capHeight+1);
-
 }
