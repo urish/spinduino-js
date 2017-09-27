@@ -892,9 +892,9 @@ ISSUE G&lt;br&gt;</description>
 <devices>
 <device name="" package="WSON6">
 <connects>
-<connect gate="G$1" pin="CP+" pad="6"/>
+<connect gate="G$1" pin="CP+" pad="4"/>
 <connect gate="G$1" pin="CP-" pad="5"/>
-<connect gate="G$1" pin="ENA" pad="4"/>
+<connect gate="G$1" pin="ENA" pad="6"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="3"/>
@@ -1997,8 +1997,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="U1" library="uri" deviceset="MC74VHC1GT125" device="DT"/>
-<part name="U2" library="uri" deviceset="MC74VHC1GT125" device="DT"/>
+<part name="U1" library="uri" deviceset="MC74VHC1GT125" device="DF" value="MC74VHC1GT125DF"/>
+<part name="U2" library="uri" deviceset="MC74VHC1GT125" device="DF" value="MC74VHC1GT125DF"/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND15" library="ng-beacon" deviceset="GND" device=""/>
@@ -2678,8 +2678,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,175.26,104.14,BAT1,+,V_BATT,,,"/>
+<approved hash="104,1,185.42,104.14,BAT1,-,GND,,,"/>
+<approved hash="104,1,175.26,86.36,BAT2,+,V_BATT,,,"/>
+<approved hash="104,1,185.42,86.36,BAT2,-,GND,,,"/>
+<approved hash="104,1,175.26,68.58,BAT3,+,V_BATT,,,"/>
+<approved hash="104,1,185.42,68.58,BAT3,-,GND,,,"/>
+<approved hash="104,1,-35.56,45.72,U$4,VIN,V_BATT,,,"/>
+<approved hash="104,1,-35.56,43.18,U$4,VOUT,5V,,,"/>
 <approved hash="104,1,-99.06,-40.64,U1,VCC,5V,,,"/>
 <approved hash="104,1,-99.06,-10.16,U2,VCC,5V,,,"/>
+<approved hash="104,1,-35.56,73.66,U$15,VIN,V_BATT,,,"/>
+<approved hash="104,1,-35.56,71.12,U$15,VOUT,5V,,,"/>
+<approved hash="113,1,42.9853,-0.677331,J1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
