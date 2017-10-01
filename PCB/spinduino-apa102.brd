@@ -764,6 +764,9 @@ design rules under a new name.</description>
 <element name="C7" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="28.66" y="77.84" rot="R120">
 <attribute name="PROD_ID" value="CAP-11015" x="28.66" y="77.84" size="1.778" layer="27" rot="R120" display="off"/>
 </element>
+<element name="R2" library="SparkFun-Resistors" package="0603-RES" value="47K" x="27.41" y="72.39" rot="R300">
+<attribute name="PROD_ID" value="RES-07856" x="27.41" y="72.39" size="1.778" layer="27" rot="R300" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -940,6 +943,10 @@ design rules under a new name.</description>
 <wire x1="44.3484" y1="54.2544" x2="48.6156" y2="58.5216" width="0.1524" layer="1"/>
 <wire x1="51.9684" y1="58.5216" x2="51.98208125" y2="58.542275" width="0.1524" layer="1"/>
 <wire x1="44.3484" y1="54.2544" x2="44.347915625" y2="54.192275" width="0.1524" layer="1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="26.875" y1="75.875" x2="26.875" y2="73.25" width="0.1524" layer="1"/>
+<wire x1="26.875" y1="73.25" x2="26.985" y2="73.12611875" width="0.1524" layer="1"/>
+<wire x1="26.875" y1="75.875" x2="26.654325" y2="75.83208125" width="0.1524" layer="1"/>
 </signal>
 <signal name="HALL1">
 <contactref element="U$2" pad="2"/>
@@ -1442,12 +1449,16 @@ design rules under a new name.</description>
 <wire x1="33.5" y1="51.75" x2="34.25" y2="51" width="0.1524" layer="1"/>
 <wire x1="34.25" y1="51" x2="34.23208125" y2="50.914325" width="0.1524" layer="1"/>
 <wire x1="33.5" y1="51.75" x2="33.3468" y2="51.748" width="0.1524" layer="1"/>
-<wire x1="25" y1="62.5" x2="25" y2="74.75" width="0.1524" layer="1"/>
+<wire x1="25" y1="62.5" x2="25" y2="71.625" width="0.1524" layer="1"/>
+<wire x1="25" y1="71.625" x2="25" y2="74.75" width="0.1524" layer="1"/>
 <wire x1="32.75" y1="54.75" x2="25" y2="62.5" width="0.1524" layer="1"/>
 <wire x1="34.75" y1="52.75" x2="32.75" y2="54.75" width="0.1524" layer="16"/>
 <wire x1="25" y1="74.75" x2="24.835671875" y2="74.78208125" width="0.1524" layer="1"/>
 <wire x1="34.75" y1="52.75" x2="34.756428125" y2="52.740871875" width="0.1524" layer="16"/>
 <via x="32.75" y="54.75" extent="1-16" drill="0.35"/>
+<contactref element="R2" pad="2"/>
+<wire x1="25" y1="71.625" x2="27.75" y2="71.625" width="0.1524" layer="1"/>
+<wire x1="27.75" y1="71.625" x2="27.835" y2="71.653878125" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="C4" pad="2"/>
