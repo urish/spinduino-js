@@ -41,7 +41,6 @@ function zigzag() {
   }
   render();
   spinner.schedule(leds, 1.5);
-  return () => spinner.schedule(new Uint8Array(30), 9999);
 }
 
 function flipflop() {
@@ -102,6 +101,7 @@ const programs = [
 let programId = 0;
 let endProgram = null;
 function onClick() {
+  spinner.stop();
   if (endProgram) {
     endProgram();
     endProgram = null;
