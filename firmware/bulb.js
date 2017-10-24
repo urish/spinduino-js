@@ -18,7 +18,9 @@ function onSpin(e) {
     startTime = getTime();
   }
   let runTime = getTime() - startTime;
-  setColor(Math.round(runTime * 5), runTime > 3 ? Math.round(4 * (runTime - 3)) : 0, 0);
+  setColor(Math.round(runTime * 5),
+           runTime > 3 ? Math.round(4 * (runTime - 3)) : 0,
+           runTime > 5 ? Math.round(4 * (runTime - 5)) : 0);
 }
 
 function bulb() {
