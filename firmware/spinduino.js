@@ -74,6 +74,30 @@ function redBlue2() {
   return () => clearWatch(watch);
 }
 
+function chromeLogo() {
+  const watch = setWatch(e => {
+    let i = 0;
+    if (!e.state) {
+      for (i = 0; i < 10; i++) {
+        spinner.setPixel(i, e.state ? 1 : 10 << 16, 1);
+      }
+
+      setTimeout(() => {
+        for (i = 0; i < 10; i++) {
+          spinner.setPixel(i, 10 << 8, 1);
+        }
+      }, 20);
+
+      setTimeout(() => {
+        for (i = 0; i < 10; i++) {
+          spinner.setPixel(i, 10, 1);
+        }
+      }, 40);
+    }
+  }, D5, true);
+  return () => clearWatch(watch);
+}
+
 function snake() {
   let spinCount = 1;
   let lastTime = getTime();
@@ -93,6 +117,7 @@ function snake() {
 const programs = [
   redBlue,
   zigzag,
+  chromeLogo,
   flipflop,
   redBlue2,
   snake,
