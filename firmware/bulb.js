@@ -23,9 +23,18 @@ function onSpin(e) {
            runTime > 5 ? Math.round(4 * (runTime - 5)) : 0);
 }
 
-function bulb() {
+function enable() {
   pinMode(D5, 'input_pullup');
   digitalWrite(D4, 1);
+}
+
+function disable() {
+  digitalWrite(D4, 0);
+  pinMode(D5, 'input');
+}
+
+function bulb() {
+  enable();
   NRF.requestDevice({ filters: [{ services: ['ffe5'] }] })
     .then(device => {
       bulbDevice = device;
@@ -37,12 +46,18 @@ function bulb() {
 
   const watch = setWatch(onSpin, D5, { repeat: true, edge: 'rising' });
 
-  setInterval(() => {
+  const interval = setInterval(() => {
     if (getTime() - lastTime > 0.3) {
       setColor(0, 0, 0);
       startTime = null;
     }
   }, 100);
 
-  return () => clearWatch(watch);
+  return () => {
+    clearWatch(watch);
+    clearInterval(interval);
+    try {
+      bulbDevice.gatt.disconnect();
+    } catch (e) { }
+  };
 }
