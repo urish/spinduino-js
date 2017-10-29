@@ -1,11 +1,11 @@
 function enable() {
-  pinMode(D5, 'input_pullup');
-  digitalWrite(D4, 1);
+  pinMode(D2, 'input_pullup');
+  digitalWrite(D3, 1);
   digitalWrite(D8, 1);
 }
 
 function disable() {
-  pinMode(D5, 'input');
+  pinMode(D2, 'input');
   digitalWrite(D4, 0);
   digitalWrite(D3, 0);
   digitalWrite(D8, 0);
@@ -60,7 +60,7 @@ function flipflop() {
 function redBlue() {
   const watch = setWatch(e => {
     spinner.setPixel(8, e.state ? 0xff : 0xff << 16, 1);
-  }, D5, true);
+  }, D2, true);
   return () => clearWatch(watch);
 }
 
@@ -70,7 +70,7 @@ function redBlue2() {
     for (i = 0; i < 10; i++) {
       spinner.setPixel(i, e.state ? 1 : 1 << 16, 1);
     }
-  }, D5, true);
+  }, D2, true);
   return () => clearWatch(watch);
 }
 
@@ -94,7 +94,7 @@ function chromeLogo() {
         }
       }, 40);
     }
-  }, D5, true);
+  }, D2, true);
   return () => clearWatch(watch);
 }
 
@@ -110,7 +110,7 @@ function snake() {
     if (delta > 1) {
       spinCount = 1;
     }
-  }, D5, { repeat: true, edge: 'rising' });
+  }, D2, { repeat: true, edge: 'rising' });
   return () => clearWatch(watch);
 }
 
