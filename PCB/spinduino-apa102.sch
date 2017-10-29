@@ -2014,6 +2014,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)" device="" value="2.2uF"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="47K"/>
 <part name="GND19" library="ng-beacon" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2092,6 +2093,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C7" gate="G$1" x="-27.94" y="27.94" rot="R90"/>
 <instance part="R2" gate="G$1" x="-17.78" y="10.16"/>
 <instance part="GND19" gate="1" x="-30.48" y="10.16" rot="R270"/>
+<instance part="SUPPLY16" gate="G$1" x="162.56" y="25.4" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2510,19 +2512,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="124.46" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="HALL1PWR" class="0">
-<segment>
-<wire x1="172.72" y1="33.02" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VS"/>
-<wire x1="172.72" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
-<label x="162.56" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="P0.03"/>
-<wire x1="88.9" y1="27.94" x2="88.9" y2="22.86" width="0.1524" layer="91"/>
-<label x="86.868" y="24.892" size="1.778" layer="95" rot="R270"/>
-</segment>
-</net>
 <net name="HALL2PWR" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="VS"/>
@@ -2601,6 +2590,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="20.32" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-15.24" y="25.4"/>
+</segment>
+<segment>
+<wire x1="172.72" y1="33.02" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VS"/>
+<wire x1="172.72" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="LEDS_ENA" class="0">
