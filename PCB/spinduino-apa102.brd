@@ -161,7 +161,7 @@
 <wire x1="31.193975" y1="-1.029834375" x2="45.877928125" y2="2.90471875" width="0" layer="20" curve="90"/>
 <wire x1="45.877928125" y1="2.90471875" x2="53.256703125" y2="15.685134375" width="0" layer="20"/>
 <wire x1="53.256703125" y1="15.685134375" x2="72.181890625" y2="27.94" width="0" layer="20" curve="-60"/>
-<text x="29.513396875" y="21.735296875" size="1.778" layer="25" rot="R240" align="bottom-center">Spinduino APA r4</text>
+<text x="29.513396875" y="21.735296875" size="1.778" layer="25" rot="R240" align="bottom-center">Spinduino r4</text>
 <text x="41.518" y="13.813" size="1.778" layer="25" rot="R240" align="bottom-center">(c) 2017, Uri Shaked</text>
 <polygon width="0.1524" layer="42">
 <vertex x="92.33" y="54.56"/>
